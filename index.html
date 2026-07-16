@@ -1,40 +1,533 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Snow Bot</title>
+
+<title>Snow Bot V7</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0a0a0a;
-    color: #fff;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
 }
 
-header {
-    background: #00ff88;
-    color: #000;
-    padding: 20px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
+body{
+
+background:#05070d;
+color:white;
+
+background-image:
+radial-gradient(circle at top,#0f6cff22,transparent 40%),
+radial-gradient(circle at bottom,#00d4ff11,transparent 45%);
+
 }
 
-.section {
-    padding: 30px;
-    text-align: center;
+header{
+
+padding:80px 20px;
+text-align:center;
+
 }
 
-h2 {
-    color: #00ff88;
+.logo{
+
+font-size:55px;
+font-weight:800;
+
+background:linear-gradient(90deg,#00bfff,#008cff,#00e5ff);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
 }
 
-.card {
-    background: #111;
-    margin: 15px auto;
-    padding: 20px;
+.subtitle{
+
+margin-top:15px;
+
+font-size:20px;
+
+color:#d7e4ff;
+
+}
+
+.badges{
+
+margin-top:25px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.badge{
+
+background:#111827;
+
+padding:10px 18px;
+
+border-radius:40px;
+
+border:1px solid #1e3a8a;
+
+}
+
+.button{
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:15px 35px;
+
+background:linear-gradient(90deg,#0066ff,#00cfff);
+
+color:white;
+
+font-weight:bold;
+
+text-decoration:none;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 0 30px #0099ff55;
+
+}
+
+section{
+
+padding:70px 8%;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:34px;
+
+margin-bottom:45px;
+
+color:#7fdcff;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(0,170,255,.15);
+
+border-radius:20px;
+
+padding:30px;
+
+transition:.3s;
+
+backdrop-filter:blur(12px);
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+border-color:#00c3ff;
+
+box-shadow:0 0 25px #00c3ff33;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#8be6ff;
+
+}
+
+.price{
+
+font-size:32px;
+
+font-weight:800;
+
+margin:20px 0;
+
+color:#00d4ff;
+
+}
+
+.status{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+.status div{
+
+background:#0b1220;
+
+padding:25px;
+
+border-radius:18px;
+
+border:1px solid #1b3b7a;
+
+}
+
+.status h3{
+
+color:#63c7ff;
+
+margin-bottom:12px;
+
+}
+
+footer{
+
+padding:45px;
+
+text-align:center;
+
+background:#080d18;
+
+margin-top:60px;
+
+color:#9bbcff;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+❄️ SNOW BOT
+</div>
+
+<div class="subtitle">
+
+A plataforma completa para gerenciamento inteligente de grupos no WhatsApp.
+
+</div>
+
+<div class="badges">
+
+<div class="badge">
+🤖 419 Comandos
+</div>
+
+<div class="badge">
+🧠 IA Integrada
+</div>
+
+<div class="badge">
+🎮 RPG
+</div>
+
+<div class="badge">
+🛡️ Moderação
+</div>
+
+<div class="badge">
+⚡ Atualizações Constantes
+</div>
+
+</div>
+
+<a class="button"
+href="https://wa.me/5514991023986">
+Comprar Agora
+</a>
+
+</header>
+
+<section>
+
+<h2 class="title">
+✨ Recursos Principais
+</h2>
+
+<div class="status">
+
+<div>
+
+<h3>🤖 Inteligência Artificial</h3>
+
+<p>
+
+Gemini integrado com geração de texto, código, OCR, TTS, imagens e automações inteligentes.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>🛡️ Segurança</h3>
+
+<p>
+
+Sistema avançado de moderação com AntiSpam, AntiBot, AntiLink, AntiDocumento, AntiEdit, AntiMention e muito mais.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>🎮 RPG Integrado</h3>
+
+<p>
+
+Sistema completo com economia, batalhas, chefões, inventário, clãs, habilidades e evolução.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>📥 Downloads</h3>
+
+<p>
+
+Instagram, TikTok, Spotify, Pinterest, YouTube, OCR, QR Code, GitHub, Amazon e diversas ferramentas profissionais.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">
+💎 Planos Oficiais
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>🧊 Teste</h3>
+
+<div class="price">
+R$ 5
+</div>
+
+<p>
+24 horas de acesso.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📅 Semanal</h3>
+
+<div class="price">
+R$ 15
+</div>
+
+<p>
+7 dias.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📆 Mensal</h3>
+
+<div class="price">
+R$ 30
+</div>
+
+<p>
+30 dias de acesso ao grupo.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>👤 VIP Privado</h3>
+
+<div class="price">
+R$ 15
+</div>
+
+<p>
+
+Mensal
+
+<br><br>
+
+Anual R$80
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>👥 VIP Grupo</h3>
+
+<div class="price">
+R$20
+</div>
+
+<p>
+
+Mensal
+
+<br><br>
+
+Anual R$100
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>👑 Plano Dono</h3>
+
+<div class="price">
+R$40
+</div>
+
+<p>
+
+Mensal
+
+<br><br>
+
+Anual R$150
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⭐ Vitalício</h3>
+
+<div class="price">
+R$200
+</div>
+
+<p>
+
+✔ Todas as atualizações futuras
+
+<br>
+
+✔ Recursos Premium
+
+<br>
+
+✔ Prioridade no suporte
+
+<br>
+
+✔ Acesso permanente
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">
+📞 Contato
+</h2>
+
+<div style="text-align:center;">
+
+<a class="button"
+href="https://wa.me/5514991023986">
+
+💬 Comprar pelo WhatsApp
+
+</a>
+
+<br><br>
+
+<a class="button"
+href="https://chat.whatsapp.com/IY3kTRolPtD62Yttjaf84g?mode=gi_t">
+
+👥 Comunidade Oficial
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+❄️ Snow Bot V7.1
+
+<br><br>
+
+419 comandos • Inteligência Artificial • RPG • Ferramentas Profissionais • Atualizações Frequentes
+
+<br><br>
+
+© 2026 Snow Bot • Powered by Zyntra
+
+</footer>
+
+</body>
+
+</html>    padding: 20px;
     border-radius: 10px;
     max-width: 300px;
     box-shadow: 0 0 10px #00ff8844;
